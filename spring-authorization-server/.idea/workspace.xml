@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9101993a-1499-4b50-895e-bb97517702ce" name="Changes" comment="" />
+    <list default="true" id="471e544a-3610-4739-b1b9-07a9ac689f5d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
-  <component name="ProjectId" id="2gftp6hVqdiOox3elI8Q9ydEwTU" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2gfwiNFu2VBCb4X8L6LwrLxaapo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,17 +26,18 @@
     "Application.OAuth2AuthorizationServerApplication.executor": "Run",
     "Maven.spring-authorization-server [clean...].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/maruthi.pullagura/Education/OauthProject/demo"
+    "last_opened_file_path": "C:/Users/maruthi.pullagura/Education/spring-authorization-server"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="OAuth2AuthorizationServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spring.security.oauth.practice.OAuth2AuthorizationServerApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.security.oauth.OAuth2AuthorizationServerApplication" />
       <module name="spring-authorization-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spring.security.oauth.practice.*" />
+          <option name="PATTERN" value="com.spring.security.oauth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -50,11 +54,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9101993a-1499-4b50-895e-bb97517702ce" name="Changes" comment="" />
-      <created>1716100639692</created>
+      <changelist id="471e544a-3610-4739-b1b9-07a9ac689f5d" name="Changes" comment="" />
+      <created>1716102065663</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716100639692</updated>
+      <updated>1716102065663</updated>
     </task>
     <servers />
   </component>
