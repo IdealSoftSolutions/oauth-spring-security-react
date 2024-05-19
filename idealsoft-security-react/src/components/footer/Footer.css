@@ -1,0 +1,13 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #5ab3ee;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+}
+
+.footer label {
+    font-size: 15px;
+    padding: 0 30px;
+}

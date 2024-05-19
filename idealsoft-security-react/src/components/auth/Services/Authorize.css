@@ -1,0 +1,12 @@
+.authorize {
+    width: 75%;
+    height: 50px;
+    border: 1px solid;
+    background: #e4e8ea;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #000406;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
