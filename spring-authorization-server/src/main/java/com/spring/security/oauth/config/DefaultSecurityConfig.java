@@ -96,6 +96,7 @@ public class DefaultSecurityConfig {
                 .clientSecret("secret")
                 .scope(OidcScopes.OPENID)
                 .scope(OidcScopes.PROFILE)
+                .scope("articles.read")
                 .redirectUris(uri -> {
                     uri.add("http://localhost:3000/callback");
                 }).clientAuthenticationMethod(ClientAuthenticationMethod.NONE)
