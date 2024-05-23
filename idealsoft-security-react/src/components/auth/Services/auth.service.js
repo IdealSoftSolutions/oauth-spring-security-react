@@ -11,20 +11,37 @@ const register = (username, email, password) => {
 };
 
 
-const login = (userName, password) => {
-    return axios
-        .post(API_URL + "login", {
-            userName,
-            password,
-        })
-        .then((response) => {
-            if (response.data.userName) {
-                localStorage.setItem("user", JSON.stringify(response.data));
-                localStorage.setItem('loggedInUser', response.data.userName);
-            }
-            return response.data;
-        });
-};
+const login = async (userName, password) => {
+    const response = await fetch(
+        API_URL + "login",
+        {
+            method: "POST",
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                "Access-Control-Allow-Origin": "*",
+                'mode': 'cors',
+                "Access-Control-Allow-Methods": "DELETE, POST, GET, OPTIONS",
+                "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With"
+            },
+            body: JSON.stringify({
+                userName: userName,
+                password: password
+            })
+        }
+    );
+    const payload = await response.json();
+    console.log('payload ===>', payload)
+    if (response.ok) {
+        localStorage.setItem("user", payload);
+        localStorage.setItem('loggedInUser', payload.userName);
+        return response
+    } else {
+        throw new Error(payload.errorMessage);
+    }
+}
+
 
 const logout = () => {
     localStorage.clear();

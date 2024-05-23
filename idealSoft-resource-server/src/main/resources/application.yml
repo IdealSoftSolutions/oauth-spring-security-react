@@ -1,6 +1,8 @@
 server:
   port: 8080
 
+
+
 logging:
   level:
     root: INFO
@@ -8,7 +10,12 @@ logging:
     org.springframework.security: INFO
     org.springframework.security.oauth2: INFO
 
+
 spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/idealsoft_solutions
+    username: postgres
+    password: root
   security:
     oauth2:
       resourceserver:

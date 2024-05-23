@@ -29,21 +29,23 @@ export default function Login() {
         e.preventDefault()
         form.current.validateAll();
         if (checkBtn.current.context._errors.length === 0) {
-            AuthService.login(userName, password).then(
-                () => {
-                    navigate("/authorize");
-                },
-                (error) => {
-                    const resMessage =
-                        (error.response &&
-                            error.response.data &&
-                            error.response.data.message) ||
-                        error.message ||
-                        error.toString();
-                    toast.error(resMessage);
+            AuthService.login(userName, password)
+                .then(
+                    () => {
+                        navigate("/authorize");
+                    },
+                    (error) => {
+                        console.log('erorr occured {}', error)
+                        const resMessage =
+                            (error.response &&
+                                error.response.data &&
+                                error.response.data.message) ||
+                            error.message ||
+                            error.toString();
+                        toast.error(resMessage);
 
-                }
-            );
+                    }
+                );
         }
 
     };
